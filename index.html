@@ -1,0 +1,37 @@
+<head>
+  <title>My Page</title>
+  <style>.display-block { display: block; }.m-1 { margin: 1em; }</style>
+</head>
+
+<body>
+  <div class="display-block m-1 meme-style" style="display: none;">
+    <label for="font-size">
+      Font Size:
+      <input type="number" id="font-size">
+    </label>
+
+    <label for="font-face">
+      Font Face:
+      <select id="font-face">
+        <option>Arial</option>
+      </select>
+    </label>
+  </div>
+  <div class="m-1 meme-style" style="display: none;">
+    <label for="flavor-text">
+      Text:
+      <input type="text" id="flavor-text">
+    </label>
+  </div>
+  <div class="m-1 meme-style" style="display: none;">
+    <button id="download-button">Download image!</button>
+    <button id="reset-button">Reset Image!</button>
+  </div>
+  <canvas id="canvas" width="500" height="500">
+    Canvas requires a browser that supports HTML5.
+  </canvas>
+  <form class="m-1">
+    <input type="file" id="image-upload" accept="image/*">
+  </form>
+  <script src="./main.js"></script>
+</body>
